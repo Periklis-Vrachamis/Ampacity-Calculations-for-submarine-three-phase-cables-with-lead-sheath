@@ -544,7 +544,7 @@ end
 domain(x_left, x_right, y_bottom, y_top )
 
 -- Save the initial problem
-hi_saveas("C:\\Users\\30694\\Desktop\\Thermal Simulations\\Submarine cable calcs\\thermal.feh")
+hi_saveas("C:Desktop\\Thermal Simulations\\Submarine cable calcs\\thermal.feh") -- Change the path here
 
 -- Iteration loop for convergence
 tolerance = 0.001
@@ -633,4 +633,5 @@ print("Final Conductor Temperature: " .. Conductor_temp .. " °C")
 print("Final Conductor Losses: " .. Conductor_losses .. " W/m per core")
 print("Final Sheath Losses: " .. Sheath_losses .. " W/m per core")
 print("Final Armour Losses: " .. Armour_losses .. " W/m per cable")
+
 
