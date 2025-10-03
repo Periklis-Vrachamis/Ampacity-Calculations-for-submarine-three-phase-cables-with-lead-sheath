@@ -22,7 +22,7 @@ armour_outer_diameter = 149.3            -- External diameter of the armour
 cable_outer_diameter = 155.3             -- External diameter of outer covering
 
 -- Armour wires Specificatons
-material_armour = "Galvanized Steel" -- Set as "Galvanized Stainless Steel" OR "Galvanized Steel"
+material_armour = "Galvanized Stainless Steel" -- Set as "Galvanized Stainless Steel" OR "Galvanized Steel"
 number_armour_wires = 71 -- Number of Armour wires
 diameter_armour_wires = 6  -- Diameter of Armour wires (mm)
 armour_lay_length = 1785 -- Lay length of the Armour (mm)
@@ -633,5 +633,6 @@ print("Final Conductor Temperature: " .. Conductor_temp .. " °C")
 print("Final Conductor Losses: " .. Conductor_losses .. " W/m per core")
 print("Final Sheath Losses: " .. Sheath_losses .. " W/m per core")
 print("Final Armour Losses: " .. Armour_losses .. " W/m per cable")
+
 
 
