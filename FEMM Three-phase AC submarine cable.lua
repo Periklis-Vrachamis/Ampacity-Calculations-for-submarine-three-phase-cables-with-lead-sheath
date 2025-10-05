@@ -66,14 +66,6 @@ rho_armour = 1.0/45                    -- Armour (assumed)
 rho_outer_covering = 6.0               -- Outer covering (CIGRE TB 880 Table 2-3)
 rho_seabed = seabed_thermal_resistivity
 
--- Accounting for lay lenght factor
-rho_conductor_tape = rho_conductor_tape / layup_factor
-rho_conductor_screen = rho_conductor_screen / layup_factor
-rho_xlpe_insulation = rho_xlpe_insulation / layup_factor
-rho_insulation_screen = rho_insulation_screen / layup_factor
-rho_water_blocking = rho_water_blocking / layup_factor
-rho_pe_sheath = rho_pe_sheath / layup_factor
-
 -- Calculated radius and thicknesses
 r_conductor = conductor_diameter / 2
 r_conductor_tape = conductor_tape_diameter / 2
@@ -493,6 +485,14 @@ end
 -- -------------------------
 layup_factor = calculate_core_layup_factor()
 
+-- Accounting for lay lenght factor
+rho_conductor_tape = rho_conductor_tape / layup_factor
+rho_conductor_screen = rho_conductor_screen / layup_factor
+rho_xlpe_insulation = rho_xlpe_insulation / layup_factor
+rho_insulation_screen = rho_insulation_screen / layup_factor
+rho_water_blocking = rho_water_blocking / layup_factor
+rho_pe_sheath = rho_pe_sheath / layup_factor
+
 -- Set of temperatures as per ambient temperature
 Conductor_temp = seabed_temperature
 Sheath_temp = seabed_temperature
@@ -633,4 +633,5 @@ print("Final Conductor Temperature: " .. Conductor_temp .. " °C")
 print("Final Conductor Losses: " .. Conductor_losses .. " W/m per core")
 print("Final Sheath Losses: " .. Sheath_losses .. " W/m per core")
 print("Final Armour Losses: " .. Armour_losses .. " W/m per cable")
+
 
