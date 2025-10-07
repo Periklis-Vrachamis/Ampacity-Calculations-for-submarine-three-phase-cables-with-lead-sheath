@@ -85,6 +85,7 @@ newdocument(2)  -- 2 = Heat Flow problem in FEMM
 depth_mm = 1 -- depth = 1 mm for per-unit-depth results
 min_angle = 30 -- Related to meshing
 hi_probdef("millimeters", "planar", 1e-8, depth_mm, min_angle)  -- depth = 1 mm for per-unit-depth results
+path = "C:\\Desktop\\Thermal Simulations\\" --Change the path here to store the file
 
 -- -------------------------
 -- Loss calculations
@@ -544,7 +545,7 @@ end
 domain(x_left, x_right, y_bottom, y_top )
 
 -- Save the initial problem
-hi_saveas("C:\\thermal.feh") -- Change the path here
+hi_saveas(path.."thermal_calc.feh") -- Change the path here
 
 -- Iteration loop for convergence
 tolerance = 0.001
@@ -633,5 +634,4 @@ print("Final Conductor Temperature: " .. Conductor_temp .. " °C")
 print("Final Conductor Losses: " .. Conductor_losses .. " W/m per core")
 print("Final Sheath Losses: " .. Sheath_losses .. " W/m per core")
 print("Final Armour Losses: " .. Armour_losses .. " W/m per cable")
-
 
