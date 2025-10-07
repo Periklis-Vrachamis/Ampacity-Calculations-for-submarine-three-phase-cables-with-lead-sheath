@@ -1,4 +1,4 @@
--- =====================================================================ok
+-- =====================================================================
 -- Submarine Three-phase Cable with Lead Sheath
 -- Prepared in accordance with IEC 60287, CIGRE TB 640, and CIGRE TB 880.  
 -- Verified against CIGRE TB 880, Section 6 (Case Study 2) and Section 12 (Case Study 8).
@@ -429,3 +429,4 @@ print(format(" Dielectric Losses per core: %.2f W/m", dielectric_losses))
 print(format(" Lead Sheath Losses per core: %.2f W/m", lead_losses))
 
 print(format(" Armour Losses per cable: %.2f W/m", armour_losses))
+
