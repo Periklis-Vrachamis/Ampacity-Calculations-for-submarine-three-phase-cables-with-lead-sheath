@@ -3,4 +3,5 @@ Ampacity and loss calculation for a submarine three‑core cable with lead sheat
 
 FEMM software: https://www.femm.info/wiki/HomePage
 
-<img width="1128" height="725" alt="image" src="https://github.com/user-attachments/assets/68420df6-019b-400c-881e-e83cd685e327" />
+<img width="1419" height="731" alt="image" src="https://github.com/user-attachments/assets/1907a75a-2906-4b04-99f8-607257178aee" />
+
