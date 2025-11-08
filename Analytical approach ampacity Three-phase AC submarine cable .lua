@@ -403,7 +403,8 @@ function calculate_current_rating()
   return I, R_ac, W_d,lambda_1 , lambda_2
 end
 
-
+--Show console
+showconsole()
 
 -- Run the calculations
 local current, R_ac, W_d, lambda_1, lambda_2 = calculate_current_rating()
@@ -429,4 +430,5 @@ print(format(" Dielectric Losses per core: %.2f W/m", dielectric_losses))
 print(format(" Lead Sheath Losses per core: %.2f W/m", lead_losses))
 
 print(format(" Armour Losses per cable: %.2f W/m", armour_losses))
+
 
