@@ -86,6 +86,7 @@ depth_mm = 1 -- depth = 1 mm for per-unit-depth results
 min_angle = 30 -- Related to meshing
 hi_probdef("millimeters", "planar", 1e-8, depth_mm, min_angle)  -- depth = 1 mm for per-unit-depth results
 path = "C:\\Desktop\\Thermal Simulations\\" --Change the path here to store the file
+showconsole()
 
 -- -------------------------
 -- Loss calculations
@@ -634,4 +635,5 @@ print("Final Conductor Temperature: " .. Conductor_temp .. " °C")
 print("Final Conductor Losses: " .. Conductor_losses .. " W/m per core")
 print("Final Sheath Losses: " .. Sheath_losses .. " W/m per core")
 print("Final Armour Losses: " .. Armour_losses .. " W/m per cable")
+
 
