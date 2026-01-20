@@ -8,4 +8,4 @@ FEMM software: https://www.femm.info/wiki/HomePage
 To run the FEMM Three-phase AC submarine cable.lua file, change the path in row 88 to the path where the you would like to store the lua file. 
 **Row 88 : "path = "C:\\\Desktop\\\Thermal Simulations" --Change the path here to store the file"** 
 
-Make sure that "\\\" are added instead of "\" while copying it from file explorer. 
+Make sure that "\\\\" are added instead of "\\" while copying it from file explorer. 
