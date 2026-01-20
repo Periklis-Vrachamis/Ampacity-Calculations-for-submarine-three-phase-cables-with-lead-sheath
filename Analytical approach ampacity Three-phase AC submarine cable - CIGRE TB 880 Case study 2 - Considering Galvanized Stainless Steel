@@ -432,3 +432,4 @@ print(format(" Lead Sheath Losses per core: %.2f W/m", lead_losses))
 print(format(" Armour Losses per cable: %.2f W/m", armour_losses))
 
 
+
